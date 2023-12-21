@@ -1,64 +1,288 @@
-<!-- FONTS -->
-<link href='https://fonts.googleapis.com/css?family=Open+Sans:300,400,600' rel='stylesheet' type='text/css'>
-<link href='https://fonts.googleapis.com/css?family=Raleway:100' rel='stylesheet' type='text/css'>
-<link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
-<!-- PAGE STUFF -->
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Test</title>
-    
-    <!-- Enlace al archivo CSS -->
+    <title>Mi Página Web</title>
     <link rel="stylesheet" href="estilos.css">
 </head>
-<div class="rela-block page">
-    <div class="rela-block top-bar">
-        <div class="caps name"><div class="abs-center">Kyle J Shanks</div></div>
-    </div>
-    <div class="side-bar">
-        <div class="mugshot">
-            <div class="logo">
-                <svg viewbox="0 0 80 80" class="rela-block logo-svg">
-                    <path d="M 10 10 L 52 10 L 72 30 L 72 70 L 30 70 L 10 50 Z" stroke-width="2.5" fill="none"/>
-                </svg>
-                <p class="logo-text">kj</p>
-            </div>
-        </div>
-        <p>123 My Place Drive</p>
-        <p>Astoria, New York 11105</p>
-        <p>1-800-CALLPLZ</p>
-        <p>emailsareforsquares@gmail.com</p><br>
-        <p class="rela-block social twitter">Twitter stuff</p>
-        <p class="rela-block social pinterest">Pinterest things</p>
-        <p class="rela-block social linked-in">Linked-in man</p>
-        <p class="rela-block caps side-header">Expertise</p>
-        <p class="rela-block list-thing">HTML</p>
-        <p class="rela-block list-thing">CSS (Stylus)</p>
-        <p class="rela-block list-thing">JavaScript & jQuery</p>
-        <p class="rela-block list-thing">Killer Taste</p>
-        <p class="rela-block caps side-header">Education</p>
-        <p class="rela-block list-thing">Advanced potion making</p>
-        <p class="rela-block list-thing">Degree in popping and locking</p>
-        <p class="rela-block list-thing">Knitting game on point</p>
-        <p class="rela-block list-thing">Culinary af</p>
-    </div>
-    <div class="rela-block content-container">
-        <h2 class="rela-block caps title">Jr Front-End Developer</h2>
-        <div class="rela-block separator"></div>
-        <div class="rela-block caps greyed">Profile</div>
-        <p class="long-margin">Retro DIY quinoa, mixtape williamsburg master cleanse bushwick tumblr chillwave dreamcatcher hella wolf paleo. Knausgaard semiotics truffaut cornhole hoodie, YOLO meggings gochujang tofu. Locavore ugh kale chips iPhone biodiesel typewriter freegan, kinfolk brooklyn kitsch man bun. Austin neutra etsy, lumbersexual paleo cornhole sriracha kinfolk meggings kickstarter. </p>
-        <div class="rela-block caps greyed">Experience</div>
-
-        <h3>Job #1</h3>
-        <p class="light">First job description</p>
-        <p class="justified">Plaid gentrify put a bird on it, pickled XOXO farm-to-table irony raw denim messenger bag leggings. Hoodie PBR&B photo booth, vegan chillwave meh paleo freegan ramps. Letterpress shabby chic fixie semiotics. Meditation sriracha banjo pour-over. Gochujang pickled hashtag mixtape cred chambray. Freegan microdosing VHS, 90's bicycle rights aesthetic hella PBR&B. </p>
-        
-        <h3>Job #2</h3>
-        <p class="light">Second Job Description</p>
-        <p class="justified">Beard before they sold out photo booth distillery health goth. Hammock franzen green juice meggings, ethical sriracha tattooed schlitz mixtape man bun stumptown swag whatever distillery blog. Affogato iPhone normcore, meggings actually direct trade lomo plaid franzen shoreditch. Photo booth pug paleo austin, pour-over banh mi scenester vice food truck slow-carb. Street art kogi normcore, vice everyday carry crucifix thundercats man bun raw denim echo park pork belly helvetica vinyl. </p>
-        
-        <h3>Job #3</h3>
-        <p class="light">Third Job Description</p>
-        <p class="justified">Next level roof party lo-fi fingerstache skateboard, kogi tumblr. Shabby chic put a bird on it chambray, 3 wolf moon swag beard brooklyn post-ironic taxidermy art party microdosing keffiyeh marfa. Put a bird on it 3 wolf moon cliche helvetica knausgaard. Mumblecore fingerstache lomo, artisan freegan keffiyeh paleo kinfolk kale chips street art blog flannel.</p>
-    </div>
-</div>
+.contOut.clearfix
+  .contIn
+    .section.top.clearfix
+      .logoCont
+        img.logo(src='http://gravatar.com/avatar/51efa933e7e70c09b613ff806e36cd85?s=512')
+      h1 Jeremy Hawes
+      .moreInfo
+        p
+          | 1060 Arcade Boulevard
+          br
+          | Sacramento, CA 95815
+          br
+          | hawes.jeremy@gmail.com
+          br
+          | (916) 216.7788
+          br
+          a(href='http://onelittledesigner.com', target='_blank') RapidWeaver Themes &amp; Stacks
+      p.tagline
+        | Front-end Developer
+        br
+        | Project Manager
+        br
+        span Web &amp; Software
+    .divider
+.contOut.clearfix
+  .contIn
+    .section.middle.clearfix
+      .job
+        h2
+          | Capitol Tech Solutions
+          i.fa.fa-minus.openBtn.open
+          span Sept 2015 - present 
+        p
+          strong Position: 
+          | Project Manager
+          br
+          strong Description: 
+          | I manage the entire process of website design and development for projects varying in scope.
+          br
+          span.brag
+            | I manage a team consisting of 12 employees and 6-10 highly skilled contractors. We develop website's for our own internal CMS including Shopify and WordPress.
+    .divider
+.contOut.clearfix
+  .contIn
+    .section.middle.clearfix
+      .job
+        h2
+          | One Little Designer (1LD)
+          i.fa.fa-plus.openBtn
+          span 2010 - present 
+        p
+          strong Position: 
+          | Project Manager & Front-end Developer
+          br
+          strong Description: 
+          | Website & Software development, design, UI and project management
+          br
+          span.brag
+            | I am one of the top developers in the RapidWeaver market where I have over 70 top selling addons and my latest work is featured as a built-in theme in their latest version (6).
+    .divider
+.contOut.clearfix
+  .contIn
+    .section.middle.clearfix
+      .job
+        h2
+          | Shoulder to Shoulder
+          i.fa.fa-plus.openBtn
+          span 2007 - 2010 
+        p
+          strong Position: 
+          | System Administrator
+          br
+          strong Description: 
+          | Maintain internal database, administration, project management, team building
+          br
+          span.brag
+            | During college I was a full-time volunteer here where our aim was to help "Prepare urban fatherless young men for life" and I helped in building the company from the ground up.
+    .divider
+.contOut.clearfix
+  .contIn
+    .section.middle.clearfix
+      .job
+        h2
+          | United States Army
+          i.fa.fa-plus.openBtn
+          span 2000 - 2006 
+        p
+          strong Position: 
+          | Administration
+          br
+          strong Description: 
+          | Logistical database modeling for transportation battalion's convoy movements
+          br
+          span.brag
+            | Developed a tracking database for logistical transportation convoy movements - used for creating accurate predictive re-deployment supply dates.
+    .divider
+.contOut.clearfix.half
+  .contIn
+    .section.middle.clearfix
+      .skills.code.odd
+        h3
+          | Code & Software
+          i.fa.fa-code
+        ul
+          li.prim JavaScript
+          li jQuery
+          li jQuery UI
+          li Angular
+          li AJAX
+          li.prim CSS
+          li CSS3
+          li Sass
+          li Scss
+          li Compass
+          li.light Bourbon
+          li.prim HTML
+          li HMTL5
+          li xhtml
+          li Jade
+          li.light Haml
+          li.light SVG
+          li.prim Database
+          li.light Ruby
+          li Ruby on Rails
+          li ASP
+          li PHP
+          li.light PostgreSQL
+          li.light MySQL
+          li.prim Platforms
+          li RapidWeaver
+          li Wix
+          li WordPress
+          li Ghost
+          li.light Tumblr
+          li.light Joomla
+          li.prim API
+          li Google Maps
+          li Google Places
+          li Facebook
+          li Pinterest
+          li Instagram
+          li.light PayPal
+          li.prim Frameworks
+          li Bootstrap
+          li Foundation
+          li Pure
+          li.prim Editors
+          li Aptana
+          li Brackets
+          li Sublime Text
+          li Codepen
+          li jsFiddle
+          li Plist Editor Pro
+          li.prim Environments
+          li Git
+          li BitBucket
+          li GitHub
+          li WAMP/MAMP
+          li.prim Graphics
+          li Photoshop
+          li Illustrator
+          li.light After Effects
+      .skills.software
+        h3
+          | Practices & Tools
+          i.fa.fa-laptop
+        ul
+          li.prim Markup
+          li Semantic/intuitive
+          li Unintrusive
+          li Uniform Indention
+          li Sparingly Complex
+          li Browser Compliance
+          li Validated
+          li SEO Compliant
+          li.prim Design
+          li Responsive
+          li Single Page Apps
+          li MVC Frameworks
+          li UI & UX
+          li Branding
+          li A/B Testing
+          li Pixel Perfect
+          li Cross-browser
+          li Touch Friendly
+          li Retina Ready
+          li Fast
+          li.prim Dev Approach
+          li Plan
+          li Modular Builds
+          li Version Control
+          li Test
+          li Debug
+          li.prim Troubleshooting
+          li StackOverflow
+          li Chrome Dev Tools
+          li.prim Project Management
+          li Asana
+          li Jira
+          li Hipchat
+          li Basecamp
+          li Slack
+          li.prim Site Optimization
+          li Google Analytics
+          li Webmaster/Console Tools
+          li Website Insight
+          li PageSpeed
+    .divider
+.contOut.clearfix
+  .contIn
+    .contracts.clearfix
+      h3 Contract Employers
+      .contract
+        h4 Internet Marketing Bar
+        p.desc
+          | User Interface (UI) design, custom WP Admin design, custom WP theme design, Dashboard & 
+          a(href="https://codepen.io/jhawes/pen/gbPrbZ", target="_blank") Email Mktg dashboard 
+          | design.
+        span.date 2014
+      .contract
+        h4 Iron Post Media
+        p.desc
+          | Custom WP theme changes & custom 
+          a(href="https://codepen.io/jhawes/pen/ujdgK", target="_blank") Google Maps polygon coordinate tool 
+          |used for real estate 
+          a(href="https://codepen.io/jhawes/pen/wBACp", target="_blank") drill-down navigation 
+          | design.
+        span.date 2014
+      .contract
+        h4 California Crane School
+        p.desc
+          | Various custom PHP & WP projects: 
+          a(href="http://californiacraneschool.com", target="_blank") CaliforniaCraneSchool.com
+          |, 
+          a(href="http://craneaccidents.com", target="_blank") CraneAccidents.com
+          |, 
+          a(href="http://cranehunter.com", target="_blank") CraneHunter.org
+          |, and more to come.
+        span.date 2011 - 2014
+      .contract
+        h4 SMUD
+        p.desc 
+          | Additions & changes to various DOM elements & stylesheets within company portal.
+          span.date 2010
+    
+.contOut.clearfix.half
+  .contIn
+    .section.middle.clearfix
+      ul.buttons
+        li
+          a(href='http://onelittledesigner.com', target='_blank') 1LittleDesigner.com
+        li
+          a(href='http://rapidweaverebook.com', target='_blank') RapidWeaverEbook.com
+        li
+          a(href='http://pure4rw.com', target='_blank') Pure4RW.com
+        li
+          a(href='http://hashtaghawes.com', target='_blank') HashtagHawes.com
+        li
+          a(href='http://papertemple.net', target='_blank') PaperTemple.net
+        li
+          a(href='http://coffeetablestudios.com', target='_blank') CoffeeTableStudios.com
+    .divider
+ul.sm
+  li
+    a(href='https://codepen.io/jhawes/')
+      i.fa.fa-codepen
+  li
+    a(href='https://twitter.com/jeremyhawes')
+      i.fa.fa-twitter
+  li
+    a(href='https://www.facebook.com/1LittleDesigner')
+      i.fa.fa-facebook
+  li
+    a(href='https://plus.google.com/+JeremyHawes/posts')
+      i.fa.fa-google-plus
+  li
+    a(href='https://www.flickr.com/photos/artbyhawes/')
+      i.fa.fa-flickr
+  li
+    a(href='http://instagram.com/haweshead/')
+      i.fa.fa-instagram
+  li
+    a(href='https://www.linkedin.com/in/jeremyhawes')
+      i.fa.fa-linkedin
