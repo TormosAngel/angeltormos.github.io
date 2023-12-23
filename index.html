@@ -21,6 +21,16 @@
       padding: 20px;
     }
 
+    .profile-image {
+      text-align: center;
+    }
+
+    .profile-image img {
+      border-radius: 50%;
+      max-width: 150px;
+      margin-bottom: 20px;
+    }
+
     section {
       max-width: 800px;
       margin: 20px auto;
@@ -63,6 +73,23 @@
       background-color: #555;
     }
 
+    .social-buttons {
+      text-align: center;
+      margin-top: 20px;
+    }
+
+    .social-buttons a {
+      display: inline-block;
+      margin: 0 10px;
+      color: #fff;
+      text-decoration: none;
+      font-size: 20px;
+    }
+
+    .pdf-button {
+      background-color: #007BFF;
+    }
+
     @media screen and (max-width: 600px) {
       section {
         padding: 10px;
@@ -81,6 +108,10 @@
     <h1>Tu Nombre</h1>
     <p>Currículum Vitae</p>
   </header>
+
+  <div class="profile-image">
+    <img src="ruta_de_tu_imagen.jpg" alt="Tu Foto de Perfil">
+  </div>
 
   <section class="espanol">
     <h2><i class="fa fa-info-circle"></i> Información Personal</h2>
@@ -138,11 +169,17 @@
     </ul>
   </section>
 
+  <div class="social-buttons">
+    <a href="https://www.linkedin.com/in/tu_nombre" target="_blank"><i class="fab fa-linkedin"></i></a>
+    <button onclick="downloadPDF()" class="pdf-button"><i class="fa fa-file-pdf"></i> Descargar PDF</button>
+  </div>
+
   <div class="language-toggle">
     <button onclick="toggleLanguage('espanol')"><i class="fa fa-language"></i> Español</button>
     <button onclick="toggleLanguage('english')"><i class="fa fa-language"></i> English</button>
   </div>
 
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.4.0/jspdf.umd.min.js"></script>
   <script>
     function toggleLanguage(language) {
       if (language === 'espanol') {
@@ -153,8 +190,7 @@
         document.querySelector('.english').style.display = 'block';
       }
     }
-  </script>
 
-</body>
-
-</html>
+    function downloadPDF() {
+      const pdf = new jsPDF();
+      pdf.text(
