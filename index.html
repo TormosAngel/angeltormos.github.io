@@ -19,16 +19,16 @@
       color: #fff;
       text-align: center;
       padding: 20px;
+      position: relative;
     }
 
     .profile-image {
-      text-align: center;
-    }
-
-    .profile-image img {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
       border-radius: 50%;
       max-width: 150px;
-      margin-bottom: 20px;
     }
 
     section {
@@ -81,7 +81,7 @@
     .social-buttons a {
       display: inline-block;
       margin: 0 10px;
-      color: #fff;
+      color: #007BFF; /* Cambiado a azul para Linkedin */
       text-decoration: none;
       font-size: 20px;
     }
@@ -107,11 +107,10 @@
   <header>
     <h1>Tu Nombre</h1>
     <p>Currículum Vitae</p>
+    <div class="profile-image">
+      <img src="ruta_de_tu_imagen.jpg" alt="Tu Foto de Perfil">
+    </div>
   </header>
-
-  <div class="profile-image">
-    <img src="ruta_de_tu_imagen.jpg" alt="Tu Foto de Perfil">
-  </div>
 
   <section class="espanol">
     <h2><i class="fa fa-info-circle"></i> Información Personal</h2>
@@ -193,4 +192,11 @@
 
     function downloadPDF() {
       const pdf = new jsPDF();
-      pdf.text(
+      pdf.text(20, 20, document.querySelector('html').outerHTML);
+      pdf.save('TuNombre_Curriculum.pdf');
+    }
+  </script>
+
+</body>
+
+</html>
