@@ -70,8 +70,8 @@
     }
 
     .active-button {
-      background-color: #007BFF; /* Color del botón activo */
-      color: #fff; /* Color del texto en el botón activo */
+      background-color: #007BFF;
+      color: #fff;
     }
 
     button:hover {
@@ -86,13 +86,9 @@
     .social-buttons a {
       display: inline-block;
       margin: 0 10px;
-      color: #007BFF; /* Cambiado a azul para Linkedin */
+      color: #007BFF;
       text-decoration: none;
       font-size: 20px;
-    }
-
-    .pdf-button {
-      background-color: #007BFF;
     }
 
     .github-button {
@@ -281,6 +277,7 @@
   <div class="language-toggle">
     <button class="espanol-button active-button" onclick="toggleLanguage('espanol')"><i class="fa fa-language"></i> Español</button>
     <button class="english-button" onclick="toggleLanguage('english')"><i class="fa fa-language"></i> English</button>
+    <button class="valencià-button" onclick="toggleLanguage('english')"><i class="fa fa-language"></i> Valencià</button>
   </div>
 
 <script>
@@ -294,7 +291,6 @@
       document.querySelector('.english').style.display = 'block';
       document.querySelector('.valenciano').style.display = 'none';
     } else {
-      // Assuming 'valenciano' as the language code for Valencian
       document.querySelector('.espanol').style.display = 'none';
       document.querySelector('.english').style.display = 'none';
       document.querySelector('.valenciano').style.display = 'block';
