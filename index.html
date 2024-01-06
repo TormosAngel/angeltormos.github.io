@@ -69,6 +69,11 @@
       margin: 0 10px;
     }
 
+    .active-button {
+      background-color: #007BFF; /* Color del botón activo */
+      color: #fff; /* Color del texto en el botón activo */
+    }
+
     button:hover {
       background-color: #555;
     }
@@ -189,11 +194,11 @@
     <h2><i class="fa fa-graduation-cap"></i> Education</h2>
     <ul>
       <li>
-        <strong><link>IES El Caminàs</link></strong>
+        <strong>IES El Caminàs</strong>
         <p>Vocational Training Middle Grade in Microcomputer Systems and Networks.</p>
       </li>
       <li>
-        <strong><link>IES El Caminàs</link></strong>
+        <strong>IES El Caminàs</strong>
         <p>Vocational Training Higher Grade in Web Application Development (Current).</p>
       </li>
     </ul>
@@ -221,21 +226,31 @@
     <a href="https://github.com/TormosAngel" target="_blank"><i class="fab fa-github"></i></a>
   </div>
 
-
-
   <div class="language-toggle">
-    <button onclick="toggleLanguage('espanol')"><i class="fa fa-language"></i> Español</button>
-    <button onclick="toggleLanguage('english')"><i class="fa fa-language"></i> English</button>
+    <button class="espanol-button active-button" onclick="toggleLanguage('espanol')"><i class="fa fa-language"></i> Español</button>
+    <button class="english-button" onclick="toggleLanguage('english')"><i class="fa fa-language"></i> English</button>
   </div>
 
   <script>
     function toggleLanguage(language) {
+      const espanolSection = document.querySelector('.espanol');
+      const englishSection = document.querySelector('.english');
+
+      const espanolButton = document.querySelector('.espanol-button');
+      const englishButton = document.querySelector('.english-button');
+
       if (language === 'espanol') {
-        document.querySelector('.espanol').style.display = 'block';
-        document.querySelector('.english').style.display = 'none';
+        espanolSection.style.display = 'block';
+        englishSection.style.display = 'none';
+        
+        espanolButton.classList.add('active-button');
+        englishButton.classList.remove('active-button');
       } else {
-        document.querySelector('.espanol').style.display = 'none';
-        document.querySelector('.english').style.display = 'block';
+        espanolSection.style.display = 'none';
+        englishSection.style.display = 'block';
+
+        espanolButton.classList.remove('active-button');
+        englishButton.classList.add('active-button');
       }
     }
   </script>
