@@ -157,9 +157,11 @@
 
     <h2><i class="fa fa-cogs"></i> Habilidades</h2>
     <ul>
-      <li><strong>Desarrollo Web:</strong> HTML, CSS, JavaScript</li>
-      <li><strong>Programación:</strong> Python, Java</li>
-      <li><strong>Gestión de Proyectos:</strong> Scrum</li>
+      <li><strong>Desarrollo Web:</strong> HTML, CSS</li>
+      <li><strong>Programación:</strong>Java</li>
+      <li><strong>Sistemas Operativos:</strong> Widnows, Windows Server, Ubuntu, Ubuntu Server</li>
+      <li><strong>Office:</strong> Word, Excel, Access, PowerPoint</li>
+      <li><strong>Hardware:</strong> Montaje y mantenimiento de equipos</li>
     </ul>
 
   </section>
@@ -202,9 +204,11 @@
 
     <h2><i class="fa fa-cogs"></i> Skills</h2>
     <ul>
-      <li><strong>Web Development:</strong> HTML, CSS, JavaScript</li>
-      <li><strong>Programming:</strong> Python, Java</li>
-      <li><strong>Project Management:</strong> Scrum</li>
+        <li><strong>Web Development:</strong> HTML, CSS</li>
+        <li><strong>Programming:</strong> Java</li>
+        <li><strong>Operating Systems:</strong> Windows, Windows Server, Ubuntu, Ubuntu Server</li>
+        <li><strong>Office:</strong> Word, Excel, Access, PowerPoint</li>
+        <li><strong>Hardware:</strong> Assembly and maintenance of equipment</li>
     </ul>
 
   </section>
@@ -212,7 +216,6 @@
   <div class="social-buttons">
     <a href="https://www.linkedin.com/public-profile/settings?trk=d_flagship3_profile_self_view_public_profile" target="_blank"><i class="fab fa-linkedin"></i></a>
     <a href="https://github.com/TormosAngel" target="_blank"><i class="fab fa-github"></i></a>
-    <button onclick="downloadPDF()" class="pdf-button"><i class="fa fa-file-pdf"></i> Descargar PDF</button>
   </div>
 
 
@@ -232,12 +235,6 @@
         document.querySelector('.espanol').style.display = 'none';
         document.querySelector('.english').style.display = 'block';
       }
-    }
-
-    function downloadPDF() {
-      const pdf = new jsPDF();
-      pdf.text(20, 20, document.querySelector('html').outerHTML);
-      pdf.save('TuNombre_Curriculum.pdf');
     }
   </script>
 
