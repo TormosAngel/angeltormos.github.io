@@ -6,7 +6,7 @@ body {
 }
 
 header {
-  background-color: #343a40;
+  background-color: #007bff;
   color: #ffffff;
   text-align: center;
   padding: 20px;
@@ -33,7 +33,7 @@ section {
 }
 
 h1, h2 {
-  color: #343a40;
+  color: #007bff;
 }
 
 ul {
@@ -42,7 +42,7 @@ ul {
 }
 
 li {
-  margin-bottom: 10px;
+  margin-bottom: 15px;
 }
 
 .language-toggle {
@@ -51,7 +51,7 @@ li {
 }
 
 button {
-  background-color: #343a40;
+  background-color: #007bff;
   color: #ffffff;
   border: none;
   padding: 10px 20px;
@@ -61,12 +61,11 @@ button {
 }
 
 .active-button {
-  background-color: #007bff;
-  color: #ffffff;
+  background-color: #0056b3;
 }
 
 button:hover {
-  background-color: #555;
+  background-color: #0056b3;
 }
 
 .social-buttons {
@@ -76,18 +75,14 @@ button:hover {
 
 .social-buttons a {
   display: inline-block;
-  margin: 0 10px;
+  margin: 0 15px;
   color: #007bff;
   text-decoration: none;
-  font-size: 20px;
+  font-size: 24px;
 }
 
 @media screen and (max-width: 600px) {
   section {
-    padding: 10px;
+    padding: 15px;
   }
-}
-
-.fa {
-  margin-right: 5px;
 }
